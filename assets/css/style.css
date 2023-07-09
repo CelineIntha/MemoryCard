@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+ul {
+    background-color: aliceblue;
+    padding: 2%;
+}
+
+li:hover {
+    background-color: burlywood;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
