@@ -182,11 +182,11 @@ a {
     .container {
         justify-content: center;
         margin: auto;
-        width: 90%;
+        width: fit-content;
     }
     .wrapper{
         margin: auto;
-        width: 90%;
+        width: fit-content;
     }
     .header {
         font-size: 16px;
@@ -205,9 +205,9 @@ a {
         max-width: 40px;
     }
     .header button {
-        margin-bottom: 3%;
+        margin-bottom: 5%;
         padding: 4px;
-        width: 50%;
+        width: fit-content;
         height: 30px;
         font-size: 14px;
     }
