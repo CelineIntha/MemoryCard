@@ -10,7 +10,10 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #313084;
+    background-image: url("/assets/img/Games/FireEmblem/FE-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 a {
@@ -19,7 +22,8 @@ a {
 }
 
 .header {
-    color: white;
+    font-size: 24px;
+    color: rgb(18, 14, 14);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -77,6 +81,10 @@ a {
     width: calc(100% / 4 - 10px);
 }
 
+.cards .card:hover {
+    opacity: 0.9;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 .card.shake {
     animation: shake 0.35s ease-in-out;
 }
@@ -90,6 +98,7 @@ a {
 
     20% {
         transform: translateX(-13px);
+        box-shadow: 30px 30px 30px rgba(227, 11, 11, 0.1);
     }
 
     40% {
@@ -102,8 +111,39 @@ a {
 
     80% {
         transform: translateX(8px);
+        box-shadow: 30px 30px 30px rgba(227, 11, 11, 0.1);
     }
 }
+
+/* .card.flip.green {
+    animation: greenShadow 0.35s ease-in-out;
+}
+
+@keyframes greenShadow {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-13px);
+        box-shadow: 0px 0px 30px 10px rgba(147, 205, 145, 0.4);
+    }
+
+    40% {
+        transform: translateX(13px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+        box-shadow: 0px 0px 30px 10px rgba(147, 205, 145, 0.4);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+} */
+
 
 .card .view {
     width: 100%;
@@ -138,6 +178,9 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+    .header {
+        font-size: 16px;
+    }
     .cards {
         height: 25rem;
         width: 25rem;

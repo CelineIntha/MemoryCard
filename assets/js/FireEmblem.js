@@ -43,6 +43,10 @@ function matchCards(img1, img2) {
     if(img1 === img2) {
         // Incrémenter le compteur de paires assorties
         matched++;
+// console.log(cardOne, cardTwo)
+// cardOne.classList.add("green");
+// cardTwo.classList.add("green");
+// console.log(cardOne, cardTwo)
 
         // Vérifier si toutes les paires ont été trouvées
         if(matched == 8) {
