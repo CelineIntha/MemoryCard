@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 body {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +19,6 @@ body {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -178,22 +179,33 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+    .container {
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+    }
+    .wrapper{
+        margin: auto;
+        width: 90%;
+    }
     .header {
         font-size: 16px;
     }
     .cards {
-        height: 25rem;
-        width: 25rem;
+        margin: auto;
+        height: 20rem;
+        width: 20rem;
     }
 
     .card .front-view img {
-        width: 50px;
+        width: 40px;
     }
 
     .card .back-view img {
-        max-width: 50px;
+        max-width: 40px;
     }
     .header button {
+        margin-bottom: 3%;
         padding: 4px;
         width: 50%;
         height: 30px;
