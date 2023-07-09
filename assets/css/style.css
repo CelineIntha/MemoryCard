@@ -65,8 +65,30 @@ li:hover {
     width: 400px;
 }
 
-.card img {
-    max-width: 45px;
+.cards, .card, .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+}
+
+.card .front-view img {
+    max-width: 60px;
+    display: none;
+}
+
+.card .back-view img {
+    max-width: 60px;
 }
 
 /* Media query pour le responsive */
