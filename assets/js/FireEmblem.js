@@ -57,7 +57,7 @@ function matchCards(img1, img2) {
       if ((difficulty === "easy" && matched === 6) || (difficulty === "medium" && matched === 8)) {
         // Attendre 1 seconde, puis mélanger les cartes
         setTimeout(() => {
-          return shuffleCard(difficulty);
+          shuffleCard(difficulty);
         }, 1000);
       }
   
@@ -69,7 +69,8 @@ function matchCards(img1, img2) {
       cardOne = cardTwo = "";
   
       // Réactiver le jeu
-      return (disableDeck = false);
+      disableDeck = false;
+      return;
     }
   
     // Si les images des deux cartes sont différentes
@@ -89,6 +90,7 @@ function matchCards(img1, img2) {
       disableDeck = false;
     }, 1200);
   }
+  
   
 
 // Fonction pour mélanger les cartes et les préparer pour une nouvelle partie
