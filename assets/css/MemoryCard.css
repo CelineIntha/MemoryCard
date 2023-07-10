@@ -25,7 +25,7 @@ a {
 
 .header {
     font-size: 24px;
-    color: rgb(18, 14, 14);
+    color: #312A27;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -35,22 +35,49 @@ a {
     margin-bottom: 2%;
 }
 
+.header .title-m {
+    margin-top: 2%;
+}
+
 .header button {
-    font-size: 16px;
-    margin: auto;
+    border: none;
+    font-weight: 600;
+    color: #3a3233;
+    background-color: #948B82;
+    font-size: 19px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     padding: 8px 4px;
     border-radius: 30px;
-    border: none;
     cursor: pointer;
 }
 
+.goBack-btn {
+    color: #312A27 !important;
+    background-color: #817d7b !important;
+}
+
+.goBack-btn:hover, 
+.goBack-btn-M:hover {
+opacity: 0.9;
+}
+
+.goBack-btn-M {
+    color: #817d7b !important;
+    background-color: #312A27 !important;
+    margin-bottom: 3.5%;
+}
+
 .header button:hover {
-    opacity: 0.9;
+    color: #948B82;
+    background-color: #312A27;
 }
 
 .wrapper {
-    margin-top: 5%;
+    width: fit-content;
+    margin: auto;
     padding: 25px;
     border-radius: 10px;
     background: #F8F8F8;
@@ -66,8 +93,9 @@ a {
 }
 
 .cards {
-    height: 40rem;
-    width: 40rem;
+    margin: auto;
+    height: 32rem;
+    width: 32rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -160,11 +188,11 @@ a {
 }
 
 .card .front-view img {
-    width: 80px;
+    width: 70px;
 }
 
 .card .back-view img {
-    max-width: 80px;
+    max-width: 70px;
 }
 
 .card .back-view {
@@ -182,10 +210,6 @@ a {
 @media screen and (max-width: 700px) {
     .container {
         justify-content: center;
-        margin: auto;
-        width: fit-content;
-    }
-    .wrapper{
         margin: auto;
         width: fit-content;
     }
@@ -208,7 +232,6 @@ a {
     .header button {
         margin-bottom: 5%;
         padding: 4px;
-        width: fit-content;
         height: 30px;
         font-size: 14px;
     }
