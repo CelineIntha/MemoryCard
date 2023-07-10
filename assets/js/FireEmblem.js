@@ -47,9 +47,9 @@ function matchCards(img1, img2) {
       // Récupérer la difficulté depuis le chemin de la page actuelle
       var difficulty = "";
   
-      if (window.location.pathname.includes("FireEmblem-E")) {
+      if (window.location.pathname.includes("fireemblem-e")) {
         difficulty = "easy";
-      } else if (window.location.pathname.includes("FireEmblem-M")) {
+      } else if (window.location.pathname.includes("fireemblem-m")) {
         difficulty = "medium";
       }
   
@@ -129,9 +129,9 @@ function shuffleCard(level) {
   
   // Appeler shuffleCard() lorsque la page est chargée
   document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname.includes("FireEmblem-E")) {
+    if (window.location.pathname.includes("fireemblem-e")) {
       shuffleCard("easy");
-    } else if (window.location.pathname.includes("FireEmblem-M")) {
+    } else if (window.location.pathname.includes("fireemblem-m")) {
       shuffleCard("medium");
     }
   });
