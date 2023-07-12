@@ -20,7 +20,7 @@
             <h2>Select a difficulty level</h2>
             <button id="easyButton"><a href="/Games/FireEmblem/FireEmblem-E.html">Easy</a></button>
             <button id="mediumButton"><a href="/Games/FireEmblem/FireEmblem-M.html">Medium</a></button>
-            <button><a href="/index.html">Hard</a></button>
+            <button id="hardButton"><a href="/Games/FireEmblem/FireEmblem-H.html">Hard</a></button>
             <button class="goBack-btn"><a href="/index.html">Go back to Home Screen Title</a></button>
         </div>
     </div>
@@ -38,21 +38,37 @@
     <script>
         // Détecter la page actuelle
         var currentPage = window.location.pathname;
-    
+
         // Ajouter un écouteur d'événements au bouton Easy
         var easyButton = document.getElementById("easyButton");
-        easyButton.addEventListener("click", function() {
-          // Rediriger vers la page FireEmblem-E
-          window.location.href = "fireemblem-e.html";
+        easyButton.addEventListener("click", function () {
+            // Rediriger vers la page FireEmblem-E
+            window.location.href = "fireemblem-e.html";
         });
-    
+
         // Ajouter un écouteur d'événements au bouton Medium
         var mediumButton = document.getElementById("mediumButton");
-        mediumButton.addEventListener("click", function() {
-          // Rediriger vers la page FireEmblem-M
-          window.location.href = "fireemblem-m.html";
+        mediumButton.addEventListener("click", function () {
+            // Rediriger vers la page FireEmblem-M
+            window.location.href = "fireemblem-m.html";
         });
-      </script>
+
+        var hardButton = document.getElementById("hardButton");
+        hardButton.addEventListener("click", function () {
+            // Rediriger vers la page FireEmblem-M
+            window.location.href = "fireemblem-h.html";
+        });
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var card = document.getElementsByClassName('card');
+            for (var i = 0; i < card.length; i++) {
+                card[i].style.height = 'calc(100% / 5 - 10px)';
+                card[i].style.width = 'calc(100% / 5 - 10px)';
+            }
+        });
+
+
+    </script>
 
 </body>
 

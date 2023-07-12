@@ -51,10 +51,12 @@ function matchCards(img1, img2) {
         difficulty = "easy";
       } else if (window.location.pathname.includes("fireemblem-m")) {
         difficulty = "medium";
+      } else if (window.location.pathname.includes("fireemblem-h")) {
+        difficulty = "hard";
       }
   
       // Vérifier si toutes les paires ont été trouvées en fonction de la difficulté
-      if ((difficulty === "easy" && matched === 6) || (difficulty === "medium" && matched === 8)) {
+      if ((difficulty === "easy" && matched === 6) || (difficulty === "medium" && matched === 8) || (difficulty === "hard" && matched === 10)) {
         // Attendre 1 seconde, puis mélanger les cartes
         setTimeout(() => {
           shuffleCard(difficulty);
@@ -106,7 +108,9 @@ function shuffleCard(level) {
       arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
     } else if (level === "easy") {
       arr = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6];
-    }
+    } else if (level === "hard") {
+        arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
+      }
   
     // Mélanger le tableau de manière aléatoire
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
@@ -133,7 +137,9 @@ function shuffleCard(level) {
       shuffleCard("easy");
     } else if (window.location.pathname.includes("fireemblem-m")) {
       shuffleCard("medium");
-    }
+    } else if (window.location.pathname.includes("fireemblem-h")) {
+        shuffleCard("hard");
+      } 
   });
   
 
